@@ -40,11 +40,10 @@ public class PhastaPStampede extends UserLogin {
     driver.get(baseUrl + subUrl);
       authenticate(driver);
     driver.findElement(By.linkText("Experiment")).click();
-    driver.findElement(By.xpath("(//a[contains(text(),'Create')])[2]")).click();
-    driver.findElement(By.id("experiment-name")).clear();
+    driver.findElement(By.cssSelector("li.dropdown.open > ul.dropdown-menu > li > #create")).click();
+      waitTime(200);
     driver.findElement(By.id("experiment-name")).sendKeys(expName + "PhastaP-Stampede");
       waitTime(200);
-    driver.findElement(By.id("experiment-description")).clear();
     driver.findElement(By.id("experiment-description")).sendKeys("Test Experiment");
       waitTime(200);
     new Select(driver.findElement(By.id("project"))).selectByVisibleText(ExpFileReadUtils.readProperty("project.name"));
@@ -56,7 +55,7 @@ public class PhastaPStampede extends UserLogin {
     driver.findElement(By.id("Problem-Definition")).sendKeys(ExpFileReadUtils.PHASTA_INPUT2);
     driver.findElement(By.id("Mesh-Description-File")).sendKeys(ExpFileReadUtils.PHASTA_INPUT3);
     driver.findElement(By.id("Solver-Input-Parameters")).sendKeys(ExpFileReadUtils.PHASTA_INPUT4);
-      waitTime (200);
+      waitTime(200);
     new Select(driver.findElement(By.id("compute-resource"))).selectByVisibleText("stampede.tacc.xsede.org");
       waitTime (200);
     new Select(driver.findElement(By.id("select-queue"))).selectByVisibleText("normal");
@@ -72,14 +71,11 @@ public class PhastaPStampede extends UserLogin {
     driver.findElement(By.id("enableEmail")).click();
     driver.findElement(By.id("emailAddresses")).clear();
     driver.findElement(By.id("emailAddresses")).sendKeys(ExpFileReadUtils.readProperty("email1"));
-    /*driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-    driver.findElement(By.xpath("(//input[@name='emailAddresses[]'])[2]")).clear();
-    driver.findElement(By.xpath("(//input[@name='emailAddresses[]'])[2]")).sendKeys(ExpFileReadUtils.readProperty("email2"));*/
-      waitTime (200);
-    driver.findElement(By.name("launch")).click();
-      waitTime (200);
-    /*driver.findElement(By.cssSelector("span.glyphicon.glyphicon-refresh")).click();
-      waitTime(200);*/
+    driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+    driver.findElement(By.xpath("(//input[@name='emailAddresses[]'])[2]")).sendKeys(ExpFileReadUtils.readProperty("email2"));
+    waitTime (200);
+    driver.findElement(By.id("expLaunch")).click();
+    waitTime (200);
   }
 
     private void waitTime(int i) {

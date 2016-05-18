@@ -43,11 +43,10 @@ public class AmberSanderStampede extends UserLogin {
     driver.get(baseUrl + subUrl);
       authenticate(driver);
     driver.findElement(By.linkText("Experiment")).click();
-    driver.findElement(By.xpath("(//a[contains(text(),'Create')])[2]")).click();
-    driver.findElement(By.id("experiment-name")).clear();
+    driver.findElement(By.cssSelector("li.dropdown.open > ul.dropdown-menu > li > #create")).click();
+      waitTime(200);
     driver.findElement(By.id("experiment-name")).sendKeys(expName + "AmberSander-Stampede");
       waitTime(200);
-    driver.findElement(By.id("experiment-description")).clear();
     driver.findElement(By.id("experiment-description")).sendKeys("Test Experiment");
       waitTime(200);
     new Select(driver.findElement(By.id("project"))).selectByVisibleText(ExpFileReadUtils.readProperty("project.name"));
@@ -57,15 +56,15 @@ public class AmberSanderStampede extends UserLogin {
     driver.findElement(By.name("continue")).click();
       waitTime(200);
     driver.findElement(By.id("Heat-Restart-File")).sendKeys(ExpFileReadUtils.AMBER_INPUT1);
-      waitTime (200);
+      waitTime(200);
     driver.findElement(By.id("Production-Control-File")).sendKeys(ExpFileReadUtils.AMBER_INPUT2);
-      waitTime (200);
+      waitTime(200);
     driver.findElement(By.id("Parameter-Topology-File")).sendKeys(ExpFileReadUtils.AMBER_INPUT3);
-      waitTime (200);
+      waitTime(200);
     new Select(driver.findElement(By.id("compute-resource"))).selectByVisibleText("stampede.tacc.xsede.org");
-      waitTime (200);
+      waitTime(200);
     new Select(driver.findElement(By.id("select-queue"))).selectByVisibleText("normal");
-      waitTime (200);
+      waitTime(200);
     driver.findElement(By.id("node-count")).clear();
     driver.findElement(By.id("node-count")).sendKeys("1");
     driver.findElement(By.id("cpu-count")).clear();
@@ -78,10 +77,9 @@ public class AmberSanderStampede extends UserLogin {
     driver.findElement(By.id("emailAddresses")).clear();
     driver.findElement(By.id("emailAddresses")).sendKeys(ExpFileReadUtils.readProperty("email1"));
     driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-    driver.findElement(By.xpath("(//input[@name='emailAddresses[]'])[2]")).clear();
     driver.findElement(By.xpath("(//input[@name='emailAddresses[]'])[2]")).sendKeys(ExpFileReadUtils.readProperty("email2"));
       waitTime (200);
-    driver.findElement(By.name("launch")).click();//launch
+    driver.findElement(By.id("expLaunch")).click();//launch
       waitTime (200);
   }
 

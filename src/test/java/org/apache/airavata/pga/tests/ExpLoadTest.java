@@ -50,7 +50,7 @@ public class ExpLoadTest extends UserLogin {
             t4.tearDown();
             System.out.println("AutoDockBR2 - Done");
 
-            System.out.println("Starting EchoBR2 ...");
+          /*  System.out.println("Starting EchoBR2 ...");
             EchoBR2 t5 = new EchoBR2();
             t5.setUp();
             t5.testEchoBR2();
@@ -69,7 +69,7 @@ public class ExpLoadTest extends UserLogin {
             t7.setUp();
             t7.testEchoComet();
             t7.tearDown();
-            System.out.println("EchoComet - Done");
+            System.out.println("EchoComet - Done");*/
 
             System.out.println("Starting QuantumEspressoStampede ...");
             QuantumEspressoStampede t8 = new QuantumEspressoStampede();
@@ -155,12 +155,12 @@ public class ExpLoadTest extends UserLogin {
             t19.tearDown();
             System.out.println("TrinityStampede - Done");*/
 
-            System.out.println("Starting WRFStampede ...");
+            /*System.out.println("Starting WRFStampede ...");
             WRFStampede t20 = new WRFStampede();
             t20.setUp();
             t20.testWRFStampede();
             t20.tearDown();
-            System.out.println("WRFStampede - Done");
+            System.out.println("WRFStampede - Done");*/
         }
 
         long endTime = System.nanoTime();

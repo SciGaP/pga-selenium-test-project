@@ -43,10 +43,8 @@ public class AbinitBR2 extends UserLogin {
       authenticate(driver);
     driver.findElement(By.linkText("Experiment")).click();
     driver.findElement(By.cssSelector("li.dropdown.open > ul.dropdown-menu > li > #create")).click();
-    driver.findElement(By.id("experiment-name")).clear();
       waitTime(200);
     driver.findElement(By.id("experiment-name")).sendKeys(expName + "Abinit-BR2");
-    driver.findElement(By.id("experiment-description")).clear();
       waitTime(200);
     driver.findElement(By.id("experiment-description")).sendKeys("Test Experiment");
     new Select(driver.findElement(By.id("project"))).selectByVisibleText(ExpFileReadUtils.readProperty("project.name"));

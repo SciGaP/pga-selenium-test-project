@@ -28,8 +28,8 @@ public class CreateUserLogin {
       String username = null;
       String password = null;
       try {
-          username = ExpFileReadUtils.readProperty("pga.username");
-          password = ExpFileReadUtils.readProperty("pga.password");
+          username = ExpFileReadUtils.readProperty("new.pga.username");
+          password = ExpFileReadUtils.readProperty("new.pga.password");
 
       } catch (Exception e) {
           throw new RuntimeException(e);
