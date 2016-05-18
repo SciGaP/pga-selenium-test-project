@@ -1,4 +1,4 @@
-##################### Selenium Instructions #####################
+## Instructions for Selenium Test Scripts
 #################################################################
 
 
