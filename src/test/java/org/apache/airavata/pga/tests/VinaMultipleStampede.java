@@ -38,7 +38,7 @@ public class VinaMultipleStampede extends UserLogin {
   }
 
   @Test
-  public void testAutoDockVinaStampede() throws Exception {
+  public void testVinaMultipleStampede() throws Exception {
     driver.get(baseUrl + subUrl);
       authenticate(driver);
     driver.findElement(By.linkText("Experiment")).click();

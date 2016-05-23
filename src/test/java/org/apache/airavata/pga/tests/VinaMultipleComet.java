@@ -38,7 +38,7 @@ public class VinaMultipleComet extends UserLogin {
   }
 
   @Test
-  public void testAutoDockVinaComet() throws Exception {
+  public void testVinaMultipleComet() throws Exception {
     driver.get(baseUrl + subUrl);
       authenticate(driver);
     driver.findElement(By.linkText("Experiment")).click();
