@@ -35,7 +35,7 @@ Navigate to pga-selenium-test-project/src/test/resources/
 5. Other test scripts available
 	- ExpLoadTest (can be used similar to RunAllTests. Can be used to submit multiple experiments from one application deployment)
 	- SearchProjectExp (This script will display all the experiments in a Project.Working in Progress)
-	- CreateUserLogin (To creat a new user account in PGA)
+	- CreateUserLogin (To create a new user account in PGA)
 	- UserLogout (Initial test script to test login out from PGA)
 
 
