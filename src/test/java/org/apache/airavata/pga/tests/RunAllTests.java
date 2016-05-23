@@ -30,313 +30,327 @@ public class RunAllTests extends UserLogin {
         int iterations1 = 1;
         for (int i=0; i < iterations1; ++i) {
 
-       System.out.println("Starting AbinitBR2 ...");
-        AbinitBR2 t23 = new AbinitBR2();
-        t23.setUp();
-        t23.testAbinitBR2();
-        t23.tearDown();
+        System.out.println("Starting AbaqusComet ...");
+        AbaqusComet t1 = new AbaqusComet();
+        t1.setUp();
+        t1.testAbaqusComet();
+        t1.tearDown();
+        System.out.println("AbaqusComet - Done");
+
+        System.out.println("Starting AbinitBR2 ...");
+        AbinitBR2 t2 = new AbinitBR2();
+        t2.setUp();
+        t2.testAbinitBR2();
+        t2.tearDown();
         System.out.println("AbinitBR2 - Done");
 
+        System.out.println("Starting AbinitBridges ...");
+        AbinitBridges t3 = new AbinitBridges();
+        t3.setUp();
+        t3.testAbinitBridges();
+        t3.tearDown();
+        System.out.println("AbinitBridges - Done");
 
-//        System.out.println("Starting AbinitComet ...");
-//        AbinitComet t30 = new AbinitComet();
-//        t30.setUp();
-//        t30.testAbinitComet();
-//        t30.tearDown();
-//        System.out.println("AbinitComet - Done");
-
+        System.out.println("Starting AbinitComet ...");
+        AbinitComet t4 = new AbinitComet();
+        t4.setUp();
+        t4.testAbinitComet();
+        t4.tearDown();
+        System.out.println("AbinitComet - Done");
 
         System.out.println("Starting AmberSanderBR2 ...");
-        AmberSanderBR2 t1 = new AmberSanderBR2();
-        t1.setUp();
-        t1.testAmberSanderBR2();
-        t1.tearDown();
+        AmberSanderBR2 t5 = new AmberSanderBR2();
+        t5.setUp();
+        t5.testAmberSanderBR2();
+        t5.tearDown();
         System.out.println("AmberSanderBR2 - Done");
 
-
-//        System.out.println("Starting AmberSanderComet ...");
-//        AmberSanderComet t2 = new AmberSanderComet();
-//        t2.setUp();
-//        t2.testAmberSanderComet();
-//        t2.tearDown();
-//        System.out.println("AmberSanderComet - Done");
+        System.out.println("Starting AmberSanderComet ...");
+        AmberSanderComet t6 = new AmberSanderComet();
+        t6.setUp();
+        t6.testAmberSanderComet();
+        t6.tearDown();
+        System.out.println("AmberSanderComet - Done");
 
         System.out.println("Starting AmberSanderStampede ...");
-        AmberSanderStampede t3 = new AmberSanderStampede();
-        t3.setUp();
-        t3.testAmberSanderStampede();
-        t3.tearDown();
+        AmberSanderStampede t7 = new AmberSanderStampede();
+        t7.setUp();
+        t7.testAmberSanderStampede();
+        t7.tearDown();
         System.out.println("AmberSanderStampede - Done");
 
-
         System.out.println("Starting AutoDockBR2 ...");
-        AutoDockBR2 t4 = new AutoDockBR2();
-        t4.setUp();
-        t4.testAutoDockBR2();
-        t4.tearDown();
+        AutoDockBR2 t8 = new AutoDockBR2();
+        t8.setUp();
+        t8.testAutoDockBR2();
+        t8.tearDown();
         System.out.println("AutoDockBR2 - Done");
 
-
-//        System.out.println("Starting CP2KComet ...");
-//        CP2KComet t24 = new CP2KComet();
-//        t24.setUp();
-//        t24.testCP2KComet();
-//        t24.tearDown();
-//        System.out.println("CP2KComet - Done");
-
-        System.out.println("Starting CP2KStampede ...");
-        CP2KStampede t21 = new CP2KStampede();
-        t21.setUp();
-        t21.testCP2KStampede();
-        t21.tearDown();
-        System.out.println("CP2KStampede - Done");
-
-//        System.out.println("Starting CPMDComet ...");
-//        CPMDComet t33 = new CPMDComet();
-//        t33.setUp();
-//        t33.testCPMDComet();
-//        t33.tearDown();
-//        System.out.println("CPMDComet - Done");
-
-
-        /*System.out.println("Starting EchoBR2 ...");
-        EchoBR2 t5 = new EchoBR2();
-        t5.setUp();
-        t5.testEchoBR2();
-        t5.tearDown();
-        System.out.println("EchoBR2 - Done");
-
-        System.out.println("Starting EchoComet...");
-        EchoComet t6 = new EchoComet();
-        t6.setUp();
-        t6.testEchoComet();
-        t6.tearDown();
-        System.out.println("EchoComet - Done");
-
-        System.out.println("Starting EchoStampede ...");
-        EchoStampede t7 = new EchoStampede();
-        t7.setUp();
-        t7.testEchoStampede();
-        t7.tearDown();
-        System.out.println("EchoStampede - Done");*/
-
-        System.out.println("Starting QuantumEspressoStampede ...");
-        QuantumEspressoStampede t8 = new QuantumEspressoStampede();
-        t8.setUp();
-        t8.testQuantumEspressoStampede();
-        t8.tearDown();
-        System.out.println("QuantumEspressoStampede - Done");
-
-        System.out.println("Starting GamessGordon ...");
-        GamessGordon t9 = new GamessGordon();
+        System.out.println("Starting AutoDockKarst ...");
+        AutoDockKarst t9 = new AutoDockKarst();
         t9.setUp();
-        t9.testGamessGordon();
+        t9.testAutoDockKarst();
         t9.tearDown();
-        System.out.println("GamessGordon - Done");
-
-//        System.out.println("Starting GaussianComet ...");
-//        GaussianComet t10 = new GaussianComet();
-//        t10.setUp();
-//        t10.testGaussianComet();
-//        t10.tearDown();
-//        System.out.println("GaussianComet - Done");
-
-        System.out.println("Starting GaussianGordon ...");
-        GaussianGordon t11 = new GaussianGordon();
-        t11.setUp();
-        t11.testGaussianGordon();
-        t11.tearDown();
-        System.out.println("GaussianGordon - Done");
-
-        System.out.println("Starting GromacsStampede ...");
-        GromacsStampede t12 = new GromacsStampede();
-        t12.setUp();
-        t12.testGromacsStampede();
-        t12.tearDown();
-        System.out.println("GromacsStampede - Done");
-
-//        System.out.println("Starting LammpsComet ...");
-//        LammpsComet t13 = new LammpsComet();
-//        t13.setUp();
-//        t13.testLammpsComet();
-//        t13.tearDown();
-//        System.out.println("LammpsComet - Done");
-
-        System.out.println("Starting LammpsStampede ...");
-        LammpsStampede t14 = new LammpsStampede();
-        t14.setUp();
-        t14.testLammpsStampede();
-        t14.tearDown();
-        System.out.println("LammpsStampede - Done");
-
-//        System.out.println("Starting NwChemComet ...");
-//        NwChemComet t15 = new NwChemComet();
-//        t15.setUp();
-//        t15.testNwChemComet();
-//        t15.tearDown();
-//        System.out.println("NwChemComet - Done");
-
-        System.out.println("Starting NwChemStampede ...");
-        NwChemStampede t16 = new NwChemStampede();
-        t16.setUp();
-        t16.testNwChemStampede();
-        t16.tearDown();
-        System.out.println("NwChemStampede - Done");
-
-//        System.out.println("Starting PhastaPStampede ...");
-//        PhastaPStampede t17 = new PhastaPStampede();
-//        t17.setUp();
-//        t17.testPhastaPStampede();
-//        t17.tearDown();
-//        System.out.println("PhastaPStampede - Done");
-
-        System.out.println("Starting TinkerMonteStampede ...");
-        TinkerMonteStampede t18 = new TinkerMonteStampede();
-        t18.setUp();
-        t18.testTinkerMonteStampede();
-        t18.tearDown();
-        System.out.println("TinkerMonteStampede - Done");
-
-//        System.out.println("Starting WRFStampede ...");
-//        WRFStampede t20 = new WRFStampede();
-//        t20.setUp();
-//        t20.testWRFStampede();
-//        t20.tearDown();
-//        System.out.println("WRFStampede - Done");
-//
-//        System.out.println("Starting QuantumEspressoComet ...");
-//        QuantumEspressoComet t22 = new QuantumEspressoComet();
-//        t22.setUp();
-//        t22.testQuantumEspressoComet();
-//        t22.tearDown();
-//        System.out.println("QuantumEspressoComet - Done");
-
-        System.out.println("Starting GamessBR2 ...");
-        GamessBR2 t25 = new GamessBR2();
-        t25.setUp();
-        t25.testGamessBR2();
-        t25.tearDown();
-        System.out.println("GamessBR2 - Done");
-
-        System.out.println("Starting GaussianBR2 ...");
-        GaussianBR2 t26 = new GaussianBR2();
-        t26.setUp();
-        t26.testGaussianBR2();
-        t26.tearDown();
-        System.out.println("GaussianBR2 - Done");
-
-        System.out.println("Starting GromacsBR2 ...");
-        GromacsBR2 t27 = new GromacsBR2();
-        t27.setUp();
-        t27.testGromacsBR2();
-        t27.tearDown();
-        System.out.println("GromacsBR2 - Done");
-
-        System.out.println("Starting LammpsBR2 ...");
-        LammpsBR2 t28 = new LammpsBR2();
-        t28.setUp();
-        t28.testLammpsBR2();
-        t28.tearDown();
-        System.out.println("LammpsBR2 - Done");
-
-        System.out.println("Starting CP2KStampede ...");
-        CP2KStampede t31 = new CP2KStampede();
-        t31.setUp();
-        t31.testCP2KStampede();
-        t31.tearDown();
-        System.out.println("CP2KStampede - Done");
-//
-//        System.out.println("Starting DDSCatComet ...");
-//        DDSCatComet t34 = new DDSCatComet();
-//        t34.setUp();
-//        t34.testDDSCatComet();
-//        t34.tearDown();
-//        System.out.println("DDSCatComet - Done");
-//
-//        System.out.println("Starting GamessComet ...");
-//        GamessComet t35 = new GamessComet();
-//        t35.setUp();
-//        t35.testGamessComet();
-//        t35.tearDown();
-//        System.out.println("GamessComet - Done");
-
-
-        System.out.println("Starting GamessStampede ...");
-        GamessStampede t36 = new GamessStampede();
-        t36.setUp();
-        t36.testGamessStampede();
-        t36.tearDown();
-        System.out.println("GamessStampede - Done");
-
-//        System.out.println("Starting GromacsComet ...");
-//        GromacsComet t37 = new GromacsComet();
-//        t37.setUp();
-//        t37.testGromacsComet();
-//        t37.tearDown();
-//        System.out.println("GromacsComet - Done");
-
-        System.out.println("Starting LammpsGordon ...");
-        LammpsGordon t38 = new LammpsGordon();
-        t38.setUp();
-        t38.testLammpsGordon();
-        t38.tearDown();
-        System.out.println("LammpsGordon - Done");
-
-//        System.out.println("Starting QChemComet ...");
-//        QChemComet t40 = new QChemComet();
-//        t40.setUp();
-//        t40.testQChemComet();
-//        t40.tearDown();
-//        System.out.println("QChemComet - Done");
-
-//         System.out.println("Starting AbaqusComet ...");
-//         AbaqusComet t41 = new AbaqusComet();
-//         t41.setUp();
-//         t41.testAbaqusComet();
-//         t41.tearDown();
-//         System.out.println("AbaqusComet - Done");
-
-         System.out.println("Starting DFTBStampede ...");
-         DFTBStampede t42 = new DFTBStampede();
-         t42.setUp();
-         t42.testDFTBStampede();
-         t42.tearDown();
-         System.out.println("DFTBStampede - Done");
-
-         System.out.println("Starting MolcasStampede ...");
-         MolcasStampede t43 = new MolcasStampede();
-         t43.setUp();
-         t43.testMolcasStampede();
-         t43.tearDown();
-         System.out.println("MolcasStampede - Done");
-
-        /* System.out.println("Starting QuantumEspressoLonestar ...");
-         QuantumEspressoLonestar t44 = new QuantumEspressoLonestar();
-         t44.setUp();
-         t44.testQuantumEspressoLonestar();
-         t44.tearDown();
-         System.out.println("QuantumEspressoLonestar - Done");
-
-         System.out.println("Starting EchoLonestar...");
-         EchoLonestar t45 = new EchoLonestar();
-         t45.setUp();
-         t45.testEchoLonestar();
-         t45.tearDown();
-         System.out.println("EchoLonestar - Done");*/
-
-        System.out.println("Starting NEK5000BR2 ...");
-        NEK5000BR2 t46 = new NEK5000BR2();
-        t46.setUp();
-        t46.testNEK5000BR2();
-        t46.tearDown();
-        System.out.println("NEK5000BR2 - Done");
+        System.out.println("AutoDockKarst - Done");
 
         System.out.println("Starting AutoDockVinaStampede ...");
-        AutoDockVinaStampede t47 = new AutoDockVinaStampede();
-        t47.setUp();
-        t47.testAutoDockVinaStampede();
-        t47.tearDown();
+        AutoDockVinaStampede t10 = new AutoDockVinaStampede();
+        t10.setUp();
+        t10.testAutoDockVinaStampede();
+        t10.tearDown();
         System.out.println("AutoDockVinaStampede - Done");
+
+        System.out.println("Starting CP2KComet ...");
+        CP2KComet t11 = new CP2KComet();
+        t11.setUp();
+        t11.testCP2KComet();
+        t11.tearDown();
+        System.out.println("CP2KComet - Done");
+
+        System.out.println("Starting CP2KStampede ...");
+        CP2KStampede t12 = new CP2KStampede();
+        t12.setUp();
+        t12.testCP2KStampede();
+        t12.tearDown();
+        System.out.println("CP2KStampede - Done");
+
+        System.out.println("Starting CPMDComet ...");
+        CPMDComet t13 = new CPMDComet();
+        t13.setUp();
+        t13.testCPMDComet();
+        t13.tearDown();
+        System.out.println("CPMDComet - Done");
+
+        System.out.println("Starting DDSCatComet ...");
+        DDSCatComet t14 = new DDSCatComet();
+        t14.setUp();
+        t14.testDDSCatComet();
+        t14.tearDown();
+        System.out.println("DDSCatComet - Done");
+
+        System.out.println("Starting DFTBStampede ...");
+        DFTBStampede t15 = new DFTBStampede();
+        t15.setUp();
+        t15.testDFTBStampede();
+        t15.tearDown();
+        System.out.println("DFTBStampede - Done");
+
+        System.out.println("Starting GamessBR2 ...");
+        GamessBR2 t16 = new GamessBR2();
+        t16.setUp();
+        t16.testGamessBR2();
+        t16.tearDown();
+        System.out.println("GamessBR2 - Done");
+
+        System.out.println("Starting GamessComet ...");
+        GamessComet t17 = new GamessComet();
+        t17.setUp();
+        t17.testGamessComet();
+        t17.tearDown();
+        System.out.println("GamessComet - Done");
+
+        System.out.println("Starting GamessGordon ...");
+        GamessGordon t18 = new GamessGordon();
+        t18.setUp();
+        t18.testGamessGordon();
+        t18.tearDown();
+        System.out.println("GamessGordon - Done");
+
+        System.out.println("Starting GamessKarst ...");
+        GamessKarst t19 = new GamessKarst();
+        t19.setUp();
+        t19.testGamessKarst();
+        t19.tearDown();
+        System.out.println("GamessKarst - Done");
+
+        System.out.println("Starting GamessStampede ...");
+        GamessStampede t20 = new GamessStampede();
+        t20.setUp();
+        t20.testGamessStampede();
+        t20.tearDown();
+        System.out.println("GamessStampede - Done");
+
+        System.out.println("Starting GaussianBR2 ...");
+        GaussianBR2 t21 = new GaussianBR2();
+        t21.setUp();
+        t21.testGaussianBR2();
+        t21.tearDown();
+        System.out.println("GaussianBR2 - Done");
+
+        System.out.println("Starting GaussianBridges ...");
+        GaussianBridges t22 = new GaussianBridges();
+        t22.setUp();
+        t22.testGaussianBridges();
+        t22.tearDown();
+        System.out.println("GaussianBridges - Done");
+
+        System.out.println("Starting GaussianComet ...");
+        GaussianComet t23 = new GaussianComet();
+        t23.setUp();
+        t23.testGaussianComet();
+        t23.tearDown();
+        System.out.println("GaussianComet - Done");
+
+        System.out.println("Starting GaussianGordon ...");
+        GaussianGordon t24 = new GaussianGordon();
+        t24.setUp();
+        t24.testGaussianGordon();
+        t24.tearDown();
+        System.out.println("GaussianGordon - Done");
+
+        System.out.println("Starting GaussianKarst ...");
+        GaussianKarst t25 = new GaussianKarst();
+        t25.setUp();
+        t25.testGaussianKarst();
+        t25.tearDown();
+        System.out.println("GaussianKarst - Done");
+
+        System.out.println("Starting GromacsBR2 ...");
+        GromacsBR2 t26 = new GromacsBR2();
+        t26.setUp();
+        t26.testGromacsBR2();
+        t26.tearDown();
+        System.out.println("GromacsBR2 - Done");
+
+        System.out.println("Starting GromacsComet ...");
+        GromacsComet t27 = new GromacsComet();
+        t27.setUp();
+        t27.testGromacsComet();
+        t27.tearDown();
+        System.out.println("GromacsComet - Done");
+
+        System.out.println("Starting GromacsKarst ...");
+        GromacsKarst t28 = new GromacsKarst();
+        t28.setUp();
+        t28.testGromacsKarst();
+        t28.tearDown();
+        System.out.println("GromacsKarst - Done");
+
+        System.out.println("Starting GromacsStampede ...");
+        GromacsStampede t29 = new GromacsStampede();
+        t29.setUp();
+        t29.testGromacsStampede();
+        t29.tearDown();
+        System.out.println("GromacsStampede - Done");
+
+        System.out.println("Starting LammpsBR2 ...");
+        LammpsBR2 t30 = new LammpsBR2();
+        t30.setUp();
+        t30.testLammpsBR2();
+        t30.tearDown();
+        System.out.println("LammpsBR2 - Done");
+
+        System.out.println("Starting LammpsComet ...");
+        LammpsComet t31 = new LammpsComet();
+        t31.setUp();
+        t31.testLammpsComet();
+        t31.tearDown();
+        System.out.println("LammpsComet - Done");
+
+        System.out.println("Starting LammpsGordon ...");
+        LammpsGordon t32 = new LammpsGordon();
+        t32.setUp();
+        t32.testLammpsGordon();
+        t32.tearDown();
+        System.out.println("LammpsGordon - Done");
+
+        System.out.println("Starting LammpsKarst ...");
+        LammpsKarst t33 = new LammpsKarst();
+        t33.setUp();
+        t33.testLammpsKarst();
+        t33.tearDown();
+        System.out.println("LammpsKarst - Done");
+
+        System.out.println("Starting LammpsStampede ...");
+        LammpsStampede t34 = new LammpsStampede();
+        t34.setUp();
+        t34.testLammpsStampede();
+        t34.tearDown();
+        System.out.println("LammpsStampede - Done");
+
+        System.out.println("Starting MolcasStampede ...");
+        MolcasStampede t35 = new MolcasStampede();
+        t35.setUp();
+        t35.testMolcasStampede();
+        t35.tearDown();
+        System.out.println("MolcasStampede - Done");
+
+        System.out.println("Starting NEK5000BR2 ...");
+        NEK5000BR2 t36 = new NEK5000BR2();
+        t36.setUp();
+        t36.testNEK5000BR2();
+        t36.tearDown();
+        System.out.println("NEK5000BR2 - Done");
+
+        System.out.println("Starting NwChemComet ...");
+        NwChemComet t37 = new NwChemComet();
+        t37.setUp();
+        t37.testNwChemComet();
+        t37.tearDown();
+        System.out.println("NwChemComet - Done");
+
+        System.out.println("Starting NwChemStampede ...");
+        NwChemStampede t38 = new NwChemStampede();
+        t38.setUp();
+        t38.testNwChemStampede();
+        t38.tearDown();
+        System.out.println("NwChemStampede - Done");
+
+        System.out.println("Starting PhastaPStampede ...");
+        PhastaPStampede t39 = new PhastaPStampede();
+        t39.setUp();
+        t39.testPhastaPStampede();
+        t39.tearDown();
+        System.out.println("PhastaPStampede - Done");
+
+        System.out.println("Starting QChemComet ...");
+        QChemComet t40 = new QChemComet();
+        t40.setUp();
+        t40.testQChemComet();
+        t40.tearDown();
+        System.out.println("QChemComet - Done");
+
+        System.out.println("Starting QuantumEspressoBridges ...");
+        QuantumEspressoBridges t41 = new QuantumEspressoBridges();
+        t41.setUp();
+        t41.testQuantumEspressoBridges();
+        t41.tearDown();
+        System.out.println("QuantumEspressoBridges - Done");
+
+        System.out.println("Starting QuantumEspressoComet ...");
+        QuantumEspressoComet t42 = new QuantumEspressoComet();
+        t42.setUp();
+        t42.testQuantumEspressoComet();
+        t42.tearDown();
+        System.out.println("QuantumEspressoComet - Done");
+
+        System.out.println("Starting QuantumEspressoStampede ...");
+        QuantumEspressoStampede t43 = new QuantumEspressoStampede();
+        t43.setUp();
+        t43.testQuantumEspressoStampede();
+        t43.tearDown();
+        System.out.println("QuantumEspressoStampede - Done");
+
+        System.out.println("Starting TinkerMonteStampede ...");
+        TinkerMonteStampede t44 = new TinkerMonteStampede();
+        t44.setUp();
+        t44.testTinkerMonteStampede();
+        t44.tearDown();
+        System.out.println("TinkerMonteStampede - Done");
+
+        System.out.println("Starting VinaMultipleComet ...");
+        VinaMultipleComet t45 = new VinaMultipleComet();
+        t45.setUp();
+        t45.testVinaMultipleComet();
+        t45.tearDown();
+        System.out.println("VinaMultipleComet - Done");
+
+        System.out.println("Starting VinaMultipleStampede ...");
+        VinaMultipleStampede t46 = new VinaMultipleStampede();
+        t46.setUp();
+        t46.testVinaMultipleStampede();
+        t46.tearDown();
+        System.out.println("VinaMultipleStampede - Done");
 
         }
         long endTime = System.nanoTime();
