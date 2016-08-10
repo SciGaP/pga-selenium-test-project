@@ -73,13 +73,13 @@ public class NEK5000BR2 extends UserLogin {
     driver.findElement(By.id("cpu-count")).clear();
     driver.findElement(By.id("cpu-count")).sendKeys("16");
     driver.findElement(By.id("wall-time")).clear();
-    driver.findElement(By.id("wall-time")).sendKeys("600");
+    driver.findElement(By.id("wall-time")).sendKeys("300");
     driver.findElement(By.id("memory-count")).clear();
     driver.findElement(By.id("memory-count")).sendKeys("0");
     driver.findElement(By.id("enableEmail")).click();
     driver.findElement(By.id("emailAddresses")).sendKeys(ExpFileReadUtils.readProperty("email1"));
-    driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-    driver.findElement(By.xpath("(//input[@name='emailAddresses[]'])[2]")).sendKeys(ExpFileReadUtils.readProperty("email2"));
+   // driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+   // driver.findElement(By.xpath("(//input[@name='emailAddresses[]'])[2]")).sendKeys(ExpFileReadUtils.readProperty("email2"));
       waitTime (200);
     driver.findElement(By.id("expLaunch")).click();
       waitTime (200);
