@@ -42,7 +42,7 @@ public class ExpFileReadUtils {
     public static String AUTODOCK_INPUT3 = getLocalPath() + "/AUTODOCK_FILES/hsg1.maps.fld";
     public static String AUTODOCKVINA_INPUT1 = getLocalPath() + "/AUTODOCK_FILES/AUTODOCK_VINA/receptor.pdbqt";
     public static String AUTODOCKVINA_INPUT2 = getLocalPath() + "/AUTODOCK_FILES/AUTODOCK_VINA/ligand1.pdbqt";
-    public static String AUTODOCKVINA_INPUT3 = getLocalPath() + "/AUTODOCK_FILES/AUTODOCK_VINA/config";
+    public static String AUTODOCKVINA_INPUT3 = getLocalPath() + "/AUTODOCK_FILES/AUTODOCK_VINA_MULTIPLE/config";
     public static String VINAMULTIPLE_INPUT1 = getLocalPath() + "/AUTODOCK_FILES/AUTODOCK_VINA_MULTIPLE/receptor.pdbqt";
     public static String VINAMULTIPLE_INPUT2 = getLocalPath() + "/AUTODOCK_FILES/AUTODOCK_VINA_MULTIPLE/Ligands.zip";
     public static String VINAMULTIPLE_INPUT3 = getLocalPath() + "/AUTODOCK_FILES/AUTODOCK_VINA_MULTIPLE/config";
@@ -81,6 +81,7 @@ public class ExpFileReadUtils {
     public static String ABAQUS_INPUT1 = getLocalPath() + "/ABAQUS_FILES/flanges_2.inp";
     public static String DFTB_INPUT1 = getLocalPath() + "/DFTB_FILES/CaCO3_T2_in.hsd";
     public static String MOLCAS_INPUT1 = getLocalPath() + "/MOLCAS_FILES/molcasTest20.input";
+    public static String PSI_INPUT1 = getLocalPath() + "PSI4.0_FILES/fd-freq-energy_input.dat";
 
     public static String getLocalPath() {
         try {
